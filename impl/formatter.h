@@ -43,8 +43,10 @@ inline void FieldStr<field, Width, j, Fill>::stream(std::ostream& os, EntryConte
 	switch(j) {
 		case Justification::LEFT:
 			os << std::left;
+			break;
 		case Justification::RIGHT:
 			os << std::right;
+			break;
 	}
 
 	switch(field) {
